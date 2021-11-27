@@ -1,6 +1,7 @@
 
+apply from: "../api-common.gradle"
 
 dependencies {
-    implementation project(":fandom-core")
+
 }
 

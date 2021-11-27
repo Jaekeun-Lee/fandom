@@ -1,0 +1,12 @@
+bootJar.enabled(false)
+jar.enabled(true)
+
+dependencies {
+    implementation project(":fandom-core")
+    implementation project(":fandom-web-core")
+    implementation project(":fandom-domain-rds")
+
+    implementation "$boot:spring-boot-starter-web"
+    implementation "$boot:spring-boot-starter-mail"
+}
+
