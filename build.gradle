@@ -57,7 +57,7 @@ subprojects {
 }
 
 
-["fandom-common", "fandom-web"].each {
+["fandom-web", "fandom-domain"].each {
     def subProjectDir = new File(projectDir, it)
     subProjectDir.eachDir {dir->
         def projectName = ":${it}-${dir.name}"
@@ -67,6 +67,7 @@ subprojects {
         }
     }
 }
+
 ["fandom-api"].each {
     def subProjectDir = new File(projectDir, it)
     subProjectDir.eachDir {dir->
